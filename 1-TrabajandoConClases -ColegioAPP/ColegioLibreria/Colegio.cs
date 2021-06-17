@@ -26,8 +26,8 @@ namespace ColegioLibreria
 
         //props con logica
         //backing variable : https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties#properties-with-backing-fields
-        string _twitterLink;
-        string Twitterlink
+        private string _twitterLink;
+        public string Twitterlink
         {
             // usuario @
             // manipular backing var
