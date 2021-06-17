@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ColegioLibreria
 {
-     class Colegio
+    class Colegio
     {
         //manera que me permite usar las props y al usar get-set encapsular de manera amplia
         public string Nombre { get; set; }
@@ -42,7 +39,7 @@ namespace ColegioLibreria
         //constructor
         public Colegio()
         {
-            Nombre         = "Escuela NoName";
+            Nombre = "Escuela NoName";
             NumeroTelefono = "000-000-000000";
 
         }
@@ -50,7 +47,7 @@ namespace ColegioLibreria
         //tambien puedo hacerlo mediante instancia
         public Colegio(string NombreDelColegio, string ColegioNumeroTelefono)
         {
-            Nombre         = NombreDelColegio;
+            Nombre = NombreDelColegio;
             NumeroTelefono = ColegioNumeroTelefono;
         }
 
@@ -62,7 +59,7 @@ namespace ColegioLibreria
         //}
 
         //funciones dentro la expresion
-        public float PromedioDeNotas(float a, float b, float c) =>(a + b + c) / 3;
+        public float PromedioDeNotas(float a, float b, float c) => (a + b + c) / 3;
 
         public int PromedioDeNotas(int a, int b, int c)
         {
