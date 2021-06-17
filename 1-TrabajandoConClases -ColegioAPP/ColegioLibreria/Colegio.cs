@@ -61,5 +61,18 @@ namespace ColegioLibreria
             Nombre         = NombreDelColegio;
             NumeroTelefono = ColegioNumeroTelefono;
         }
+
+        //metodos o funciones
+        public float PromedioDeNotas(float a, float b, float c)
+        {
+            var promedio = (a + b + c) / 3;
+            return promedio;
+        }
+
+        public int PromedioDeNotas(int a, int b, int c)
+        {
+            var promedio = (a + b + c) / 3;
+            return promedio;
+        }
     }
 }
