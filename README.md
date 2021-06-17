@@ -77,6 +77,23 @@ public string CodPostal       { get; set; }
 public string NumeroTelefono  { get; set; }
 ```
 So...
+```csharp
+public Colegio()
+{
+    Nombre         = "Escuela NoName";
+    NumeroTelefono = "000-000-000000";
+
+}
+
+//tambien puedo hacerlo mediante instancia
+public Colegio(string NombreDelColegio, string ColegioNumeroTelefono)
+{
+    Nombre         = NombreDelColegio;
+    NumeroTelefono = ColegioNumeroTelefono;
+}
+```
+
+
 
 
 
