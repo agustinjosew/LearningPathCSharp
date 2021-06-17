@@ -38,6 +38,11 @@ namespace ColegioLibreria
                 {
                     _twitterLink = value;
                 }
+
+                else
+                {
+                    throw new Exception("El usuario debe contener @.");
+                }
             }
 
         }
