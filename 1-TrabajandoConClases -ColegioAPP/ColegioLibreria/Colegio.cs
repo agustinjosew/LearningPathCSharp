@@ -8,14 +8,6 @@ namespace ColegioLibreria
 {
      class Colegio
     {
-        //manera no convencional, no hay interaccion de encapsulacion
-        //string ColegioNombre;
-        //string ColegioDireccion;
-        //string ColegioCiudad;
-        //string ColegioProvincia;
-        //string ColegioCodPostal;
-        //string NumeroTelefono;
-
         //manera que me permite usar las props y al usar get-set encapsular de manera amplia
         public string Nombre { get; set; }
         public string Direccion { get; set; }
@@ -78,7 +70,20 @@ namespace ColegioLibreria
             return promedio;
         }
 
-        
+        //sobre escribiendo ToString
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(Nombre);
+            sb.AppendLine(Direccion);
+            sb.AppendLine(Ciudad);
+            sb.Append(", ");
+            sb.Append(Provincia);
+            sb.Append(" ");
+            sb.Append(CodPostal);
+
+            return sb.ToString();
+        }
 
     }
 }

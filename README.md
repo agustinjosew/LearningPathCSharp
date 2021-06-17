@@ -124,3 +124,39 @@ public int PromedioDeNotas(int a, int b, int c)
 }
 ```
 And then we've got two methods in here, they're overloading each other. Overloading is a form of polymorphism which is another one of the cornerstones of object-oriented programming. 
+
+A function bodied expression is just a different way of writing a method, not unlike the one that i wrote  before.  In a function bodied expression instead of doing a code block with a curly brace, we're just going to do a very simple expression. It kind of looks like something that we're seing in JavaScript, which is an arrow function.  Though, to be honest, I probably wouldn't try anything very long with this. It really only supports very simple expressions. This is kind of handy if we just want to expose some very simple logic, like what we have here. If we're doing something really complicated that involves a lot of steps, working with data bases, working with arrays, searching for things I probably wouldn't want to try something like that in a function bodied expression. ***These are really just limited to really simple returns.***
+
+```csharp
+//funciones dentro la expresion
+public float PromedioDeNotas(float a, float b, float c) => (a + b + c) / 3;
+```
+
+
+---
+* Static methods
+
+Static methods are methods that we can call without instantiating the class, expose something that can be used without instantiation. 
+
+---
+* Overriding ToString <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-override-the-tostring-method" target="_blank">+info</a>
+
+Something we'll often want to do in our class is to override the ToString method. The ToString method is a common method. It's on the base object in everything in C#, and so everything pretty much has a ToString method.
+
+```csharp
+//sobre escribiendo ToString
+public override string ToString()
+{
+    var sb = new StringBuilder();
+    sb.AppendLine(Nombre);
+    sb.AppendLine(Direccion);
+    sb.AppendLine(Ciudad);
+    sb.Append(", ");
+    sb.Append(Provincia);
+    sb.Append(" ");
+    sb.Append(CodPostal);
+
+    return sb.ToString();
+}
+```
+
