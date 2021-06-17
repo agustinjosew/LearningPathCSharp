@@ -32,6 +32,8 @@ string Twitterlink
 
 }
 ```
+
+---
 * Access Modifiers <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers" target="_blank">+info</a>
 
 The accessibility level controls whether they can be used from other code in your assembly or other assemblies.
@@ -47,6 +49,34 @@ The accessibility level controls whether they can be used from other code in you
 <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected-internal" target="_blank">protected internal</a>: The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived class in another assembly.
 
 <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private-protected" target="_blank">private protected</a>: The type or member can be accessed only within its declaring assembly, by code in the same class or in a type that is derived from that class.
+
+ ---
+ * Constructors <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/constructors" target="_blank">+info</a>
  
+ A constructor is a method whose name is the same as the name of its type. Its method signature includes only the method name and its parameter list; it does not include a return type.
  
- 
+```csharp
+//generate the constructor directly from the name of the class using the command
+ctor + tab 
+```
+As a result we get a empty constructor with no arguments:
+```csharp
+public Colegio()
+        {
+
+        }
+```
+The point of using constructors is handle initialization , i have a set of properties but I haven't set any of them to a initial value yet...
+
+```csharp
+public string Nombre          { get; set; }
+public string Direccion       { get; set; }
+public string Ciudad          { get; set; }
+public string Provincia       { get; set; }
+public string CodPostal       { get; set; }
+public string NumeroTelefono  { get; set; }
+```
+So...
+
+
+
