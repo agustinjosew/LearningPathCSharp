@@ -24,5 +24,23 @@ namespace ColegioLibreria
         public string CodPostal { get; set; }
         public string NumeroTelefono { get; set; }
 
+        //props con logica
+        //backing variable : https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties#properties-with-backing-fields
+        string _twitterLink;
+        string Twitterlink
+        {
+            // usuario @
+            // manipular backing var
+            get { return _twitterLink; }
+            set
+            {
+                if (value.StartsWith("@"))
+                {
+                    _twitterLink = value;
+                }
+            }
+
+        }
+
     }
 }
