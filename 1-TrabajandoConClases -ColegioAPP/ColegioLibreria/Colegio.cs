@@ -73,10 +73,10 @@ namespace ColegioLibreria
             var sb = new StringBuilder();
             sb.AppendLine(Nombre);
             sb.AppendLine(Direccion);
-            sb.AppendLine(Ciudad);
+            sb.Append(Ciudad);
             sb.Append(", ");
             sb.Append(Provincia);
-            sb.Append(" ");
+            sb.Append(" - CP: ");
             sb.Append(CodPostal);
 
             return sb.ToString();

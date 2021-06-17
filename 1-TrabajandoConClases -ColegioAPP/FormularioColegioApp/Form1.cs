@@ -24,7 +24,7 @@ namespace FormularioColegioApp
 
             testLibreria.Nombre         = txtNombreColegio.Text;
             testLibreria.Direccion      = txtDireccion.Text;
-            testLibreria.Ciudad         = txtDireccion.Text;
+            testLibreria.Ciudad         = txtCiudad.Text;
             testLibreria.Provincia      = txtProvincia.Text;
             testLibreria.CodPostal      = txtCodPostal.Text;
             testLibreria.NumeroTelefono = txtTelefono.Text;
@@ -37,8 +37,8 @@ namespace FormularioColegioApp
 
                 MessageBox.Show(ex.Message);
             }
-            
-            
+
+            MessageBox.Show(testLibreria.ToString());
         }
     }
 }
