@@ -32,7 +32,21 @@ string Twitterlink
 
 }
 ```
+* Access Modifiers <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers" target="_blank">+info</a>
 
+The accessibility level controls whether they can be used from other code in your assembly or other assemblies.
+
+<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/public" target="_blank">public</a>: The type or member can be accessed by any other code in the same assembly or another assembly that references it.
+
+<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private" target="_blank">private</a>: The type or member can be accessed only by code in the same class or struct.
+
+<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected" target="_blank">protected</a>: The type or member can be accessed only by code in the same class, or in a class that is derived from that class.
+
+<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/internal" target="_blank">internal</a>: The type or member can be accessed by any code in the same assembly, but not from another assembly.
+
+<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected-internal" target="_blank">protected internal</a>: The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived class in another assembly.
+
+<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/private-protected" target="_blank">private protected</a>: The type or member can be accessed only within its declaring assembly, by code in the same class or in a type that is derived from that class.
  
  
  
