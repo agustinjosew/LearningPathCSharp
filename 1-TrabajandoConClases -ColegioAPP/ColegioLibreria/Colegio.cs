@@ -3,7 +3,7 @@ using System.Text;
 
 namespace ColegioLibreria
 {
-    class Colegio
+   public class Colegio
     {
         //manera que me permite usar las props y al usar get-set encapsular de manera amplia
         public string Nombre { get; set; }
