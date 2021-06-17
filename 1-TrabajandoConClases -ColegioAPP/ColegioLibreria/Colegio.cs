@@ -63,16 +63,22 @@ namespace ColegioLibreria
         }
 
         //metodos o funciones
-        public float PromedioDeNotas(float a, float b, float c)
-        {
-            var promedio = (a + b + c) / 3;
-            return promedio;
-        }
+        //public float PromedioDeNotas(float a, float b, float c)
+        //{
+        //    var promedio = (a + b + c) / 3;
+        //    return promedio;
+        //}
+
+        //funciones dentro la expresion
+        public float PromedioDeNotas(float a, float b, float c) =>(a + b + c) / 3;
 
         public int PromedioDeNotas(int a, int b, int c)
         {
             var promedio = (a + b + c) / 3;
             return promedio;
         }
+
+        
+
     }
 }
