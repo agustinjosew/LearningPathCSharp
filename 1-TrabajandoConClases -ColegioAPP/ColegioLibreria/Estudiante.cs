@@ -15,5 +15,13 @@ namespace ColegioLibreria
         {
             return 4.54f;
         }
+        public override string EnviarMensaje(string mensaje)
+        {
+            var original = base.EnviarMensaje(mensaje);
+            var sb       = new StringBuilder(original);
+            sb.Append("Este mensaje es privado y confidencial.");
+            return sb.ToString();
+
+        }
     }
 }
