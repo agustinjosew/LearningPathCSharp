@@ -1,7 +1,7 @@
 ﻿
 namespace FormularioColegioApp
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -44,6 +44,8 @@ namespace FormularioColegioApp
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtTwitter = new System.Windows.Forms.TextBox();
             this.btn_test = new System.Windows.Forms.Button();
+            this.btnTestProfesor = new System.Windows.Forms.Button();
+            this.btnTestAlumno = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -160,7 +162,7 @@ namespace FormularioColegioApp
             // 
             // btn_test
             // 
-            this.btn_test.Location = new System.Drawing.Point(204, 232);
+            this.btn_test.Location = new System.Drawing.Point(157, 214);
             this.btn_test.Name = "btn_test";
             this.btn_test.Size = new System.Drawing.Size(120, 23);
             this.btn_test.TabIndex = 14;
@@ -168,11 +170,33 @@ namespace FormularioColegioApp
             this.btn_test.UseVisualStyleBackColor = true;
             this.btn_test.Click += new System.EventHandler(this.btn_test_Click);
             // 
-            // Form1
+            // btnTestProfesor
+            // 
+            this.btnTestProfesor.Location = new System.Drawing.Point(157, 243);
+            this.btnTestProfesor.Name = "btnTestProfesor";
+            this.btnTestProfesor.Size = new System.Drawing.Size(120, 23);
+            this.btnTestProfesor.TabIndex = 15;
+            this.btnTestProfesor.Text = "Test Profesor";
+            this.btnTestProfesor.UseVisualStyleBackColor = true;
+            this.btnTestProfesor.Click += new System.EventHandler(this.btnTestProfesor_Click);
+            // 
+            // btnTestAlumno
+            // 
+            this.btnTestAlumno.Location = new System.Drawing.Point(157, 272);
+            this.btnTestAlumno.Name = "btnTestAlumno";
+            this.btnTestAlumno.Size = new System.Drawing.Size(120, 23);
+            this.btnTestAlumno.TabIndex = 16;
+            this.btnTestAlumno.Text = "Test Alumno";
+            this.btnTestAlumno.UseVisualStyleBackColor = true;
+            this.btnTestAlumno.Click += new System.EventHandler(this.btnTestAlumno_Click);
+            // 
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 394);
+            this.ClientSize = new System.Drawing.Size(470, 389);
+            this.Controls.Add(this.btnTestAlumno);
+            this.Controls.Add(this.btnTestProfesor);
             this.Controls.Add(this.btn_test);
             this.Controls.Add(this.txtTwitter);
             this.Controls.Add(this.txtTelefono);
@@ -188,8 +212,8 @@ namespace FormularioColegioApp
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmPrincipal";
+            this.Text = "PoC C#";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,6 +236,8 @@ namespace FormularioColegioApp
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtTwitter;
         private System.Windows.Forms.Button btn_test;
+        private System.Windows.Forms.Button btnTestProfesor;
+        private System.Windows.Forms.Button btnTestAlumno;
     }
 }
 

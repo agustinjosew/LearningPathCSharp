@@ -11,9 +11,9 @@ using ColegioLibreria;
 
 namespace FormularioColegioApp
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -39,6 +39,21 @@ namespace FormularioColegioApp
             }
 
             MessageBox.Show(testLibreria.ToString());
+        }
+
+        private void btnTestProfesor_Click(object sender, EventArgs e)
+        {
+            var profesor = new Profesor();
+            var computarPromedio = profesor.ComputarPromedioDelCurso();
+            MessageBox.Show("El promedio del profesor es de : " + computarPromedio);
+        }
+
+        private void btnTestAlumno_Click(object sender, EventArgs e)
+        {
+            var estudiante = new Estudiante();
+            var computarPromedio = estudiante.ComputarPromedioDelCurso();
+            MessageBox.Show("El promedio de alumno es de : " + computarPromedio);
+
         }
     }
 }
