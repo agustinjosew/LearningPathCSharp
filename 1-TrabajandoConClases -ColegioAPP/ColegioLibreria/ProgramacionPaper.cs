@@ -12,6 +12,12 @@ namespace ColegioLibreria
         public int PalabrasMinimas { get; set; }
         public string TextoDelPaper { get; set; }
 
+        public int ContadorPalabras
+        {
+            //solo lectura :)
+            get { return TextoDelPaper.ContadorPalabras(); }
+        }
+
 
     }
 }

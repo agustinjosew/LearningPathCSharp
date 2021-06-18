@@ -8,7 +8,7 @@ namespace ColegioLibreria
 {
     public class Estudiante : Persona
     {
-        public enum NivelesCursos{Ingresante, Junior, Senior, AcomodadoVagoPolitico, VacunadoVIP_K}
+        public enum NivelesCursos{Ingresante, Junior, Senior}
         public NivelesCursos NivelCurso { get; set; }
 
         public override float ComputarPromedioDelCurso()

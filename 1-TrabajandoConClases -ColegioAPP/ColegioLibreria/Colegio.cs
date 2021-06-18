@@ -5,7 +5,6 @@ namespace ColegioLibreria
 {
    public class Colegio
     {
-        //manera que me permite usar las props y al usar get-set encapsular de manera amplia
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         public string Ciudad { get; set; }

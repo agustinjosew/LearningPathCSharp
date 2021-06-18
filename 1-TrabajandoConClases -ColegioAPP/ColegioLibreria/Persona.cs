@@ -16,8 +16,9 @@ namespace ColegioLibreria
 
         public virtual string EnviarMensaje(string mensaje)
         {
-            var sb = new StringBuilder();
+            var sb            = new StringBuilder();
             var MarcaDeTiempo = string.Format("Enviado el {0:D} a las {0:t}", DateTime.Now );
+
             sb.AppendLine(MarcaDeTiempo);
             sb.AppendLine(" ");
             sb.AppendLine("Estimad@ " + Nombre + ",");

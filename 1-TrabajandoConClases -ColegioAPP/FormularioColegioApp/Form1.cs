@@ -43,14 +43,14 @@ namespace FormularioColegioApp
 
         private void btnTestProfesor_Click(object sender, EventArgs e)
         {
-            var profesor = new Profesor();
+            var profesor         = new Profesor();
             var computarPromedio = profesor.ComputarPromedioDelCurso();
             MessageBox.Show("El promedio del profesor es de : " + computarPromedio);
         }
 
         private void btnTestAlumno_Click(object sender, EventArgs e)
         {
-            var estudiante = new Estudiante();
+            var estudiante       = new Estudiante();
             var computarPromedio = estudiante.ComputarPromedioDelCurso();
             MessageBox.Show("El promedio de alumno es de : " + computarPromedio);
 

@@ -45,6 +45,7 @@
     <Compile Include="Estudiante.cs" />
     <Compile Include="ExperimentoLaboratorioProgramacion.cs" />
     <Compile Include="IPuntaje.cs" />
+    <Compile Include="MetodosExtension.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Primaria\Libro.cs" />
     <Compile Include="Profesor.cs" />
