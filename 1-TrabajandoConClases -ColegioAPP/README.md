@@ -1,3 +1,8 @@
+| Preparing objectives                         |
+|---------------------------------------------|
+| Declaring variables<br>Working with strings<br>Using mathematical operations<br>Creating classes and properties<br>Using expressions<br>Using static, abstract, and virtual methods<br>Building a user interface<br>Extending classes<br>Working with subclassed objects<br>Using the object-oriented features of C# |
+
+
 ## <u>Class:</u>
  * Properties with backing fields
  <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties#properties-with-backing-fields" target="_blank">+info</a>
@@ -154,5 +159,6 @@ public override string ToString()
     return sb.ToString();
 }
 ```
+
 
 
