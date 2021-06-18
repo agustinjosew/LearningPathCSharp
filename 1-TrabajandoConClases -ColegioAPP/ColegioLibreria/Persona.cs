@@ -13,5 +13,16 @@ namespace ColegioLibreria
         public string Email { get; set; }
 
         public abstract float ComputarPromedioDelCurso();
+
+        public virtual string EnviarMensaje(string mensaje)
+        {
+            var sb = new StringBuilder();
+            var MarcaDeTiempo = string.Format("Enviado el {0:D} a las {0:t}", DateTime.Now );
+            sb.AppendLine(MarcaDeTiempo);
+            sb.AppendLine(" ");
+            sb.AppendLine("Estimad@ " + Nombre + ",");
+            sb.AppendLine(mensaje);
+            return sb.ToString();
+        }
     }
 }
