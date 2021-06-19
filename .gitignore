@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/2-Flow Control, Arrays, and Exception Handling/imgDoc/Ex_Files_CSharpEssT_2/Ex_Files_CSharpEssT_2
+*.zip
