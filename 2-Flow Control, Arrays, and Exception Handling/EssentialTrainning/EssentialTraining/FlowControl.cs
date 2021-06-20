@@ -19,6 +19,17 @@ namespace EssentialTraining
                 return false;
             }
         }
+
+        public bool MiColorFavoritoEsROjo(string color)
+        {
+            if (color.ToLower() == "Rojo") return true;
+            return false;
+        }
+
+        public bool MiColorPreferidoEsVerde(string color)
+        {
+            return (color.ToLower() == "Verde") ? true : false;
+        }
         
     }
 }
